@@ -185,14 +185,21 @@ window.mountPagination = function (items = []) {
 // function to search for character name with given value
 window.searchData = function () {
   let searchValue = document.getElementById("search-input").value;
+  let searchIcon = document.getElementsByClassName("search-bar__icon")[0].firstElementChild;
   
   if (!searchValue) {
     parsedCharacters = characters;
+    searchIcon.removeAttribute("class");
+    searchIcon.classList.add('fa');
+    searchIcon.classList.add('fa-search');
     mountPagination();
     paginate(1);
     return;
   }
   
+  searchIcon.removeAttribute("class");
+  searchIcon.classList.add('fa');
+  searchIcon.classList.add('fa-times');
   parsedCharacters = [characters
     .find(char => {
       let name = char.name.toLowerCase();
