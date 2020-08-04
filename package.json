@@ -1,0 +1,47 @@
+{
+  "name": "marvel-list",
+  "version": "1.0.0",
+  "description": "\"Marvel character list.\"",
+  "main": "index.html",
+  "private": "true",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "md5": "^2.3.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build",
+    "build": "webpack --config webpack.config.js && webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brurubio/marvel-list.git"
+  },
+  "keywords": [
+    "marvel",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Bruna Rubio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brurubio/marvel-list/issues"
+  },
+  "homepage": "https://github.com/brurubio/marvel-list#readme"
+}
